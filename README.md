@@ -7,9 +7,10 @@
 - WHERE length>ALL 
 - (SELECT AVG (length) FROM film);
 
-- 2-SELECT COUNT(title) FROM film
-- WHERE rental_rate=ALL
-- (SELECT MAX(rental_rate) FROM film);
+- 2
+- - SELECT COUNT(title) FROM film
+- - WHERE rental_rate=ALL
+- - (SELECT MAX(rental_rate) FROM film);
 
 - 3-SELECT title FROM film
 - WHERE title=ANY
